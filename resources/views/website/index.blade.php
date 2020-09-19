@@ -22,6 +22,7 @@
             <div class="col-lg-8 col-md-8 mx-auto">
                 @foreach($posts as $post)
                     <div class="post-preview">
+					<img src="{{ $post->thumbnail }}" />
                         <a href="{{ url('post/' . $post->slug) }}">
                             <h2 class="post-title">
                                 {{ $post->title }}
